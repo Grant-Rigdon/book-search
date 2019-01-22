@@ -1,0 +1,19 @@
+body {
+  background-image: url("http://lloydbleekcollection.cs.uct.ac.za/images/bleek_nb_lowres/BC_151_A1_4_015/A1_4_15_01489.JPG");
+  
+}
+.jumbotron {
+  background-image: url("https://www.google.com/googlebooks/about/images/hero_books.jpg");
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.card {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
+  margin-bottom: 30px;
+}
+
+.btn {
+  margin: 5px;
+}
