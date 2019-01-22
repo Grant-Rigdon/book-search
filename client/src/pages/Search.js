@@ -10,9 +10,11 @@ class Search extends Component {
     handleSubmit = event => {
         event.preventDefault()
         API.searchGb(this.refs.search.value)
-            .then(res =>                
+            .then(res => {               
                 this.setState({books: res.data.items})
-            )
+                this.refs.search.value = ""
+                
+            })
             .catch(err => console.log(err));
     }
         
@@ -25,7 +27,8 @@ class Search extends Component {
             description: book.description,
             // image: book.image,
             // link: book.link
-          })            
+          })
+            .then( () => window.location.href = "/Saved")            
             .catch(err => console.log(err));
         }
       
